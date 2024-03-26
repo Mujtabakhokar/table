@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #E0E0E0; /* Light gray background */
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF; /* White background */
+    border-radius: 8px;
+  }
+
+  th, td {
+    border: 1px solid #CCCCCC; /* Light gray borders */
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #4CAF50; /* Green background for table header */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  tr:hover {
+    background-color: #E0E0E0; /* Light gray background on hover */
+  }
+
+  button {
+    padding: 6px;
+    border: none;
+    width: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+  }
+
+  button:before {
+    font-size: 20px;
+  }
+
+  .edit-btn, .delete-btn {
+    background-color: #FFA500; /* Orange color for edit and delete buttons */
+    color: white;
+  }
+
+  .edit-btn:before {
+    content: "✏️";
+  }
+
+  .delete-btn:before {
+    content: "🗑";
+  }
+
+  .status-btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .not-paid {
+    background-color: #FFD700; /* Gold color for not paid status */
+    color: white;
+    width: 120px;
+    text-align: center;
+  }
+
+  .paid {
+    background-color: #008000; /* Dark green color for paid status */
+    color: white;
+    width: 120px;
+    text-align: center;
+  }
+
+  .processing {
+    background-color: #800080; /* Purple color for processing status */
+    color: white;
+    width: 120px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Invoice</th><th>Name</th><th>Date</th><th>Status</th><th>Amount</th><th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>101</td><td>Khadija</td><td>2024-03-18</td><td><button class="status-btn not-paid">Unpaid</button></td><td>$150.50</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+    </tr>
+    <tr>
+      <td>102</td><td>Ahmed</td><td>2024-03-19</td><td><button class="status-btn paid">Paid</button></td><td>$80.75</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+    </tr>
+    <tr>
+      <td>103</td><td>Mariam</td><td>2024-03-20</td><td><button class="status-btn processing">Processing</button></td><td>$120.00</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+    </tr>
+    <tr>
+      <td>104</td><td>Omar</td><td>2024-03-21</td><td><button class="status-btn paid">Paid</button></td><td>$200.25</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+    </tr>
+    <tr>
+      <td>105</td><td>Fatima</td><td>2024-03-22</td><td><button class="status-btn not-paid">Unpaid</button></td><td>$90.80</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
